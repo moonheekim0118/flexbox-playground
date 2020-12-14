@@ -35,6 +35,7 @@ $flexWrap.addEventListener('click',(e)=>{
             $flexBox.style.width="400px";
             $flexBox.style.height="270px";
             $flexBox.style.flexWrap="nowrap";
+            $wrapStatus.innerText='flex-wrap:nowrap';
         } else{
             if( $flexDirection.classList.contains("column")){
                 $flexBox.style.height="100px";
@@ -42,8 +43,8 @@ $flexWrap.addEventListener('click',(e)=>{
                 $flexBox.style.width="100px";
             }
             $flexBox.style.flexWrap=target;
+            $wrapStatus.innerText=`flex-wrap: ${target}`;
         }
-        $wrapStatus.innerText=`flex-wrap: ${target}`;
     }
 });
 
