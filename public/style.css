@@ -23,6 +23,7 @@ main{
 .visual-container{
     display: flex;
     width:50%;
+    justify-content: space-around;
     align-items: center;
 }
 
