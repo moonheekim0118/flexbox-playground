@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Flexbox playground 😎</h1>
+    <main>
+        <div class="controller">
+            <div id="flex-direction" class="buttons">
+                <span class="title">flex direction</span>
+                <button id="row">row (default) </button>
+                <button id="column">column</button>
+                <button id="row-reverse">row reverse</button>
+                <button id="column-reverse">column reverse</button>
+            </div>
+            <div id="flex-wrap" class="buttons">
+                <span class="title">flex wrap</span>
+                <button id="nowrap">nowrap (default) </button>
+                <button id="wrap"> wrap</button>
+                <button id="wrap-reverse">wrap-reverse</button>
+                <button id="reset">Reset</button>
+            </div>
+        
+            <div id="justify-content" class="buttons">
+                <span class="title">justify-content</span>
+                <button id="flex-start">flex-start (default) </button>
+                <button id="flex-end"> flex-end</button>
+                <button id="space-between">space-between</button>
+                <button id="space-around">space-around</button>
+                <button id="space-evenly">space-evenly</button>
+            </div>
+        
+            <div id="align-items" class="buttons">
+                <span class="title">align-items </span>
+                <button id="stretch ">stretch (default) </button>
+                <button id="flex-start"> flex-start</button>
+                <button id="flex-end">flex-end</button>
+                <button id="center">center</button>
+                <button id="baseline">baseline</button>
+            </div>
+        
+            <div id="align-content" class="buttons">
+                <span class="title">align-content (effects only when flex wrap is not nowrap)</span>
+                <button id="normal">normal(default) </button>
+                <button id="flex-start"> flex-start</button>
+                <button id="flex-end">flex-end</button>
+                <button id="center">center</button>
+                <button id="space-between">space-between</button>
+                <button id="space-around">space-around</button>
+                <button id="space-evenly">space-evenly</button>
+                <button id="stretch ">stretch</button>
+            </div>
+            <button id="all-reset">all Reset</button>
+        </div>
+        <div class="visual-container">
+            <div class="box-container">
+                <div class="item">
+                    <p>item1</p>
+                </div>
+                <div class="item">
+                    <p>item2</p>
+                </div>
+                <div class="item">
+                    <p>item3</p>
+                </div>
+                <div class="item">
+                    <p>item4</p>
+                </div>
+                <div class="item">
+                    <p>item5</p>
+                </div>
+            </div>
+            <ul class="status">
+                <li id="direction">flex-direction: row</li>
+                <li id="wrap2">flex-wrap: nowrap</li>
+                <li id="justify">justify-content: flex-start</li>
+                <li id="items">align-items: stretch</li>
+                <li id="content">align-content: normal</li>
+            </ul>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height:100%;
+    text-align: left;
+}
+
+.controller{
+    width:50%;
+}
+
+.visual-container{
+    display: flex;
+    width:50%;
+    align-items: center;
+}
+
+.box-container{
+    margin:70px 10px;
+    display:flex;
+    width:400px;
+    height:270px;
+    border:2px solid black;
+}
+
+
+.status{
+    background-color: rgba(0, 204, 102, 0.2);
+    padding:20px;
+    border-radius: 20px;
+}
+
+.item{
+    border: 1px solid black;
+}
+
+
+.item:nth-child(1){
+    background-color: rebeccapurple;
+}
+
+.item:nth-child(2){
+    background-color: pink;
+}
+
+.item:nth-child(3){
+    background-color: green;
+}
+
+.item:nth-child(4){
+    background-color: #ffcc00;
+}
+
+.item:nth-child(5){
+    background-color: #0066ff;
+}
+
+
+.buttons{
+    margin:5px;
+    border-bottom:1px solid gray;
+}
+
+button {
+    cursor:pointer;
+    border:none;
+    border-radius: 20px;
+    padding: 5px;
+    margin:5px;
+    background-color: #99ccff;
+
+    -webkit-transition: background-color 0.1s ease-in-out;
+    -moz-transition: background-color 0.1s ease-in-out;
+    -o-transition: background-color 0.1s ease-in-out;
+    -ms-transition: background-color 0.1s ease-in-out;    
+    transition: background-color 0.1s ease-in-out;
+    
+}
+
+button:hover{
+    background-color: #cc99ff;
+}
+
+button:focus{
+    outline: none;
+}
+
+
+#reset , #all-reset{
+    background-color: #ff6666;
+    color:#fff;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:50%;
+}
+
+
+.title{
+    font-weight: bold;
+    color:#660066
+}
